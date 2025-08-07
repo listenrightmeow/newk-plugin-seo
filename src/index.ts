@@ -1,1 +1,34 @@
-// @listenrightmeow/newk-plugin-seo
+import { ReplrodOptimizationPlugin } from '@listenrightmeow/replrod/plugin/OptimizationPlugin';
+import { SEOOptimizer } from './SEOOptimizer.js';
+
+const plugin: ReplrodOptimizationPlugin = {
+  metadata: {
+    name: '@listenrightmeow/replrod-plugin-seo',
+    version: '1.0.0',
+    description: 'SEO optimization with robots.txt, sitemap.xml, and meta tags for replrod',
+    author: '@listenrightmeow',
+    expectedImprovement: 'Complete SEO setup with robots.txt, sitemap.xml, and meta tags'
+  },
+  optimization: new SEOOptimizer(),
+  
+  async onLoad() {
+    console.debug('SEO optimization plugin loaded');
+  },
+  
+  async onUnload() {
+    console.debug('SEO optimization plugin unloaded');
+  }
+};
+
+export default plugin;
+export { plugin };
+
+// Export internal modules for testing
+export { RobotsGenerator } from './RobotsGenerator.js';
+export { SitemapGenerator } from './SitemapGenerator.js';
+export { SEOComponentGenerator } from './SEOComponentGenerator.js';
+export { MetaTagsUtilGenerator } from './MetaTagsUtilGenerator.js';
+export { IndexHtmlUpdater } from './IndexHtmlUpdater.js';
+export { MetaTagsConfig } from './MetaTagsConfig.js';
+export { SEOConfigurator } from './SEOConfigurator.js';
+export { SEOConfig } from './SEOConfig.js';

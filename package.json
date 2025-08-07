@@ -44,7 +44,7 @@
   "dependencies": {
     "fast-glob": "^3.3.3",
     "inquirer": "^12.9.0",
-    "puppeteer": "^22.0.0"
+    "puppeteer": "^24.16.0"
   },
   "devDependencies": {
     "@semantic-release/changelog": "^6.0.3",

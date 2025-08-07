@@ -1,0 +1,58 @@
+{
+  "name": "@listenrightmeow/newk-plugin-seo",
+  "version": "0.0.0-semantic-release",
+  "description": "Intelligent SEO optimization with meta tag management and performance monitoring",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "echo \"Tests coming soon\"",
+    "lint": "echo \"Linting coming soon\"",
+    "typecheck": "tsc --noEmit",
+    "clean": "rimraf dist",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "newk",
+    "seo",
+    "meta-tags",
+    "optimization",
+    "lighthouse",
+    "performance",
+    "accessibility",
+    "schema-org",
+    "open-graph"
+  ],
+  "author": "@listenrightmeow",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/listenrightmeow/newk-plugin-seo.git"
+  },
+  "bugs": "https://github.com/listenrightmeow/newk-plugin-seo/issues",
+  "homepage": "https://github.com/listenrightmeow/newk-plugin-seo#readme",
+  "newk": {
+    "type": "enhancement",
+    "category": "seo",
+    "priority": 7
+  },
+  "dependencies": {
+    "fast-glob": "^3.3.3",
+    "puppeteer": "^22.0.0"
+  },
+  "devDependencies": {
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/git": "^10.0.1",
+    "rimraf": "^5.0.0",
+    "semantic-release": "^21.1.2",
+    "typescript": "^5.6.3"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

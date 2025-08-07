@@ -1,6 +1,6 @@
 {
   "name": "@listenrightmeeow/newk-plugin-seo",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Intelligent SEO optimization with meta tag management and performance monitoring",
   "type": "module",
   "main": "dist/index.js",

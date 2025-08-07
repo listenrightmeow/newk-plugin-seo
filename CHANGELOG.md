@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/listenrightmeow/newk-plugin-seo/compare/v1.0.0...v1.0.1) (2025-08-07)
+
+
+### Bug Fixes
+
+* correct NPM scope to [@listenrightmeeow](https://github.com/listenrightmeeow) and add public access ([1f17392](https://github.com/listenrightmeow/newk-plugin-seo/commit/1f1739223e61d64b914ee44ae6113fdb233520b6))
+
 # 1.0.0 (2025-08-07)
 
 

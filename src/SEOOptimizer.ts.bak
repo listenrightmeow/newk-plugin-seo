@@ -2,7 +2,7 @@ import {
   OptimizationPlugin, 
   OptimizationContext, 
   OptimizationResult 
-} from './types';
+} from '@listenrightmeow/replrod/plugin/OptimizationPlugin';
 import { RobotsGenerator } from './RobotsGenerator.js';
 import { SitemapGenerator } from './SitemapGenerator.js';
 import { SEOComponentGenerator } from './SEOComponentGenerator.js';
@@ -26,10 +26,6 @@ export class SEOOptimizer implements OptimizationPlugin {
 
   async isApplicable(_context: OptimizationContext): Promise<boolean> {
     return true;
-  }
-
-  async apply(context: OptimizationContext): Promise<OptimizationResult> {
-    return this.optimize(context);
   }
 
   async optimize(context: OptimizationContext): Promise<OptimizationResult> {
@@ -244,7 +240,7 @@ export class SEOOptimizer implements OptimizationPlugin {
     return {
       success: true,
       message,
-      details: {
+      metrics: {
         improvement: 'Complete SEO setup with business-specific optimization',
         timeBefore: start,
         timeAfter: Date.now()

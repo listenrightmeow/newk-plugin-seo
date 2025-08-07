@@ -1,4 +1,4 @@
-import { ReplrodOptimizationPlugin } from './types';
+import { ReplrodOptimizationPlugin } from '@listenrightmeow/newk/plugin/OptimizationPlugin';
 import { SEOOptimizer } from './SEOOptimizer.js';
 
 const plugin: ReplrodOptimizationPlugin = {

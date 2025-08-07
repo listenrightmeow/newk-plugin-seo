@@ -1,9 +1,9 @@
-import { ReplrodOptimizationPlugin } from './types';
+import { ReplrodOptimizationPlugin } from '@listenrightmeow/replrod/plugin/OptimizationPlugin';
 import { SEOOptimizer } from './SEOOptimizer.js';
 
 const plugin: ReplrodOptimizationPlugin = {
   metadata: {
-    name: '@listenrightmeow/newk-plugin-seo',
+    name: '@listenrightmeow/replrod-plugin-seo',
     version: '1.0.0',
     description: 'SEO optimization with robots.txt, sitemap.xml, and meta tags for replrod',
     author: '@listenrightmeow',

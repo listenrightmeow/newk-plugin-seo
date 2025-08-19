@@ -43,7 +43,7 @@
   },
   "dependencies": {
     "fast-glob": "^3.3.3",
-    "inquirer": "^12.9.0",
+    "inquirer": "^12.9.3",
     "puppeteer": "^22.0.0"
   },
   "devDependencies": {
